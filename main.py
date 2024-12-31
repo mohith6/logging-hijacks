@@ -20,7 +20,7 @@ def monitor_traffic(interface=NETWORK_INTERFACE, packet_count=1000):
     """ Monitor network traffic and analyze suspicious IP and MAC combinations. """
     capture = pyshark.LiveCapture(interface=interface)
 
-    print(f"Monitoring network traffic on {interface}...")
+    print(f"Monitoring Network traffic on {interface}...")
 
     # Capture specified number of packets
     capture.sniff(packet_count=packet_count)
@@ -40,7 +40,7 @@ def monitor_traffic(interface=NETWORK_INTERFACE, packet_count=1000):
                 suspicious_macs[mac_dst] += 1
 
                 # Log the packet info
-                logging.info(f"Packet captured: {ip_src} -> {ip_dst}, MAC: {mac_src} -> {mac_dst}")
+                logging.info(f"Packets captured: {ip_src} -> {ip_dst}, MAC: {mac_src} -> {mac_dst}")
                 track_ip_mac_changes(ip_src, mac_src)
 
         except AttributeError as e:
