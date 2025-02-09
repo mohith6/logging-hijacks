@@ -22,7 +22,7 @@ def monitor_traffic(interface=NETWORK_INTERFACE, packet_count=1000):
 
     print(f"Monitoring Network traffic on {interface}...")
 
-    # Capture specified number of packets
+    # Captures specified number of packets
     capture.sniff(packet_count=packet_count)
 
     for packet in capture:
