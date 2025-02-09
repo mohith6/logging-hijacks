@@ -8,5 +8,5 @@ This package monitors network traffic and analyzes suspicious activities such as
 
 ## Requirements
 - Python 3
-- Dependencies: `scapy`, `pyshark`, `requests`, `pandas`
+- Dependencies: `scapy`, `pyshark`, `requests`, `pandas`.
 - Wireshark/tcpdump installed for packet capture
